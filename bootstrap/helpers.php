@@ -6,7 +6,7 @@ function get_db_config()
         $url = parse_url(getenv("DATABASE_URL"));
 
         return $db_config = [
-            'connection' => 'pgsql',
+            'connetion' => 'pgsql',
             'host' => $url['host'],
             'database' => substr($url["path"], 1),
             'username' => $url['user'],
@@ -19,6 +19,6 @@ function get_db_config()
             'database'  => env('DB_DATABASE', 'forge'),
             'username'  => env('DB_USERNAME', 'forge'),
             'password'  => env('DB_PASSWORD', ''),
-        ]
+        ];
     }
 }
