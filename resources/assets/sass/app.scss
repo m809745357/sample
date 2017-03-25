@@ -162,6 +162,10 @@ input {
   margin-top: 50px;
 }
 
+.alert-status {
+  @extend .alert-info;
+}
+
 /* Users index */
 
 .users {
